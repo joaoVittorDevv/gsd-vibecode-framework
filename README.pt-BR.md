@@ -324,7 +324,7 @@ Cada tarefa gera commit próprio, facilitando `git bisect`, rollback e rastreabi
 | `/gsd-plan-phase [N] [--auto] [--reviews]` | Pesquisa + plano + validação |
 | `/gsd-execute-phase <N>` | Executa planos em ondas paralelas |
 | `/gsd-verify-work [N]` | UAT manual |
-| `/gsd-ship [N] [--draft]` | Cria PR da fase validada |
+| `/gsd-ship [N] [--draft]` | Realizar Squash Merge com Commits Semânticos p/ Base Branch |
 | `/gsd-next` | Avança automaticamente para o próximo passo |
 | `/gsd-fast <text>` | Tarefas triviais sem planejamento |
 | `/gsd-complete-milestone` | Fecha o marco e marca release |

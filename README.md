@@ -413,7 +413,7 @@ If everything passes, you move on. If something's broken, you don't manually deb
 /gsd-plan-phase 2
 /gsd-execute-phase 2
 /gsd-verify-work 2
-/gsd-ship 2                  # Create PR from verified work
+/gsd-ship 2                  # Merge and push semantic commit
 ...
 /gsd-complete-milestone
 /gsd-new-milestone
@@ -566,7 +566,7 @@ You're never locked in. The system adapts.
 | `/gsd-plan-phase [N] [--auto] [--reviews]` | Research + plan + verify for a phase (`--reviews` loads codebase review findings) |
 | `/gsd-execute-phase <N>` | Execute all plans in parallel waves, verify when complete |
 | `/gsd-verify-work [N]` | Manual user acceptance testing ¹ |
-| `/gsd-ship [N] [--draft]` | Create PR from verified phase work with auto-generated body |
+| `/gsd-ship [N] [--draft]` | Squash merge to base branch with pre-approved semantic commits |
 | `/gsd-next` | Automatically advance to the next logical workflow step |
 | `/gsd-fast <text>` | Inline trivial tasks — skips planning entirely, executes immediately |
 | `/gsd-audit-milestone` | Verify milestone achieved its definition of done |
